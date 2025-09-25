@@ -1,0 +1,86 @@
+.btn {
+  border: 0px;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+
+  border-radius: 0.5rem;
+  font: var(--fw-md) var(--fs-base) / 1.5rem var(--ff-sans);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--text-color-primary);
+  color: var(--surface-color);
+  &:hover {
+    background-image: linear-gradient(
+      90deg,
+      var(--brand-gradient) 0%,
+      var(--brand-color-primary) 100%
+    );
+  }
+}
+
+.btn-secondary {
+  background-color: var(--surface-color);
+  color: var(--text-color-primary);
+  border: 2px solid var(--text-color-primary);
+  &:hover {
+    border-color: transparent;
+    /* 
+        Dois fundos:
+        1. A cor interna do botão.
+        2. O gradiente que atuará como borda.
+    */
+    background-image: linear-gradient(
+        var(--surface-color),
+        var(--surface-color)
+      ),
+      linear-gradient(
+        90deg,
+        var(--brand-gradient) 0%,
+        var(--brand-color-primary) 100%
+      );
+    /* 
+    Define como cada fundo deve se comportar:
+    1. O primeiro fundo (cor sólida) fica contido na área interna (padding-box).
+    2. O segundo fundo (gradiente) preenche até a borda (border-box).
+    */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    & .gradient-text {
+      /* 1. Aplica o gradiente como fundo do texto */
+      background: linear-gradient(
+        90deg,
+        var(--brand-gradient) 0%,
+        var(--brand-color-primary) 100%
+      );
+
+      /* 2. Recorta o fundo para o formato do texto */
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      /* 3. Torna a cor do texto transparente para revelar o gradiente */
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: var(--fs-lg);
+}
+
+.btn-md {
+  padding: 0.75rem 1.5rem;
+  font-size: var(--fs-base);
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: var(--fs-sm);
+}

@@ -15,16 +15,16 @@
 
 :root {
   /* Produto */
-  --brand-gradient: (#fc4a1a);
-  --brand-color-primary: (#f7b733);
-  --brand-color-secondary: (#fc4a1a);
+  --brand-gradient: #fc4a1a;
+  --brand-color-primary: #f7b733;
+  --brand-color-secondary:#fc4a1a;
 
   /* Base */
-  --background-color: (#09090b);
-  --surface-color: (#18181b);
-  --stroke-color: (#27272a);
-  --text-color-secondary: (#a1a1aa);
-  --text-color-primary: (#f4f4f5);
+  --background-color: #09090b;
+  --surface-color: #18181b;
+  --stroke-color: #27272a;
+  --text-color-secondary: #a1a1aa;
+  --text-color-primary: #f4f4f5;
 
   --ff-sans: "Inter", system-ui. sans-serif;
 
