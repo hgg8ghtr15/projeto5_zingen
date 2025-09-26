@@ -1,0 +1,9 @@
+& header {
+  & nav {
+    justify-content: space-between;
+  }
+}
+
+@media (width >= 80em) {
+
+}
