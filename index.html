@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <title>Pagina Zingen</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
@@ -24,19 +22,38 @@
       <div class="container py-base">
         <nav class="flex gap-1.5 items-center">
           <a href="">
-            <img src="assets/icones/logo.svg" alt="Logo empresa">
+            <img src="assets/icones/logo.svg" alt="Logo empresa" />
           </a>
           <div class="flex gap-1.5 items-center">
-
             <a href="#abolt" class="desktop-only">Conheça o App</a>
             <a href="#features" class="desktop-only">Funcionalidades</a>
             <a href="#pricing" class="desktop-only">Planos e Preços</a>
-            <button href="#dowload" class="btn btn-sm btn-primary">Baixar Agora</button>
+            <button href="#dowload" class="btn btn-sm btn-primary">
+              Baixar Agora
+            </button>
           </div>
-
         </nav>
       </div>
     </header>
-    
+    <section id="hero">
+      <div class="container flex-col py-xl items-center">
+        <div>
+          <img src="assets/icones/music_bar.svg" alt="" />
+
+          <h1>Quem canta seus males espanta</h1>
+          <p class="fs-xl">Cantar nunca foi tão fácil</p>
+
+          <div class="flex gap-1 items-center buttons">
+            <a href="#pricing" class="btn btn-secondary btn-sm"
+              ><span class="gradient-text">Ver Planos</span></a
+            >
+
+            <button href="#dowload " class="btn btn-sm btn-primary">Baixar Agora</button>
+          </div>
+        </div>
+
+        <img src="assets/icones/hero_img.svg" alt="" />
+      </div>
+    </section>
   </body>
 </html>
