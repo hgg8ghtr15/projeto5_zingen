@@ -17,7 +17,7 @@
   /* Produto */
   --brand-gradient: #fc4a1a;
   --brand-color-primary: #f7b733;
-  --brand-color-secondary:#fc4a1a;
+  --brand-color-secondary: #fc4a1a;
 
   /* Base */
   --background-color: #09090b;
@@ -83,6 +83,16 @@ h3 {
 a {
   text-decoration: none;
   color: inherit; /* faz ele herda do pai */
+}
+a:hover {
+  background-image: linear-gradient(
+    90deg,
+    var(--brand-gradient) 0%,
+    var(--brand-color-primary) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 ul[role="list"] {
