@@ -1,9 +1,15 @@
 #hero {
-  height: 46.75rem;
+  /* height: 46.75rem; */
   text-align: center;
+  /* background-image: url(../assets/icones/hero_img.svg); 
+  background-repeat: no-repeat; */
 
   & img[src*="music"] {
     width: 12.875rem;
+  }
+
+  & .fundo {
+    display: none;
   }
 
   & h1 {
@@ -11,7 +17,7 @@
   }
 
   & p {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     color: var(--text-color-secondary);
   }
 
@@ -27,6 +33,10 @@
 
     & img[src*="music"] {
       width: 25.75rem;
+    }
+
+    & .fundo {
+      display: initial;
     }
 
     & h1 {
