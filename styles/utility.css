@@ -1,6 +1,9 @@
 .py-base {
   padding-block: var(--py-base);
 }
+.py-base-1 {
+  padding-block: 1rem;
+}
 
 .py-lg {
   padding-block: var(--py-lg);
@@ -23,28 +26,28 @@
   gap: 1rem;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.flex-col{
+.flex-col {
   display: flex;
   flex-direction: column;
 }
 
-.items-center{
+.items-center {
   align-items: center;
 }
 
-.gap-1{
+.gap-1 {
   gap: 1rem;
 }
 
-.gap-1\.5{
+.gap-1\.5 {
   gap: 1.5rem;
 }
 
-.grid{
+.grid {
   display: grid;
 }
 
@@ -68,5 +71,4 @@
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
-
 }
